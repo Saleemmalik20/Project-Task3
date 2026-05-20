@@ -1,0 +1,22 @@
+A short write-up answering these three questions:
+      1 How do your three layers connect? Explain in your own words.
+      2 What was the hardest part and how did you solve it?
+      3 What would you do differently if you had more time?
+
+
+Well the 3 layers Frontend, Backend and Database work together with each other to manage student database.
+The Frontend(HTML,CSS and JavaScript) will interact with the users to create, add,delete,updatae and delete students.
+Here we Have used Flask backend API.
+Frontend send request through Fetch() to the backend API FLASK
+After the request come to Backend it validates the data, and communicates with the MySQL database using SQL queries.
+The database stores all the information permanently and sends the requested data back to the backend.
+Then it returns data in JSON response to the frontend to update the UI dynamically.
+
+
+My Hardest part was connecting the frontend and backend.
+Even after connecting successfully, after starting the server also, my script.js was not working.. it was not able to fetch the .js file.
+I have carefully worked on it and updated it.
+
+
+Well, if i had time i should have handled the UI Design more and worked on the errors
+Optional Features should have been implemented by me... but was not able to do that.
