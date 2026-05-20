@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        
+        <div class="stats">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Python Students</h3>
+                <p id="pythonCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Java Students</h3>
+                <p id="javaCount">0</p>
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <input type="text" id="searchInput" placeholder="Search by name or course">
+
+        <!-- FORM -->
+        <form id="studentForm">
+
+            <input type="hidden" id="studentId">
+
+            <input type="text" id="full_name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="text" id="phone" placeholder="Phone" required>
+
+            <input type="text" id="course" placeholder="Course" required>
+
+            <button type="submit">Save Student</button>
+
+        </form>
+
+        <!-- TABLE -->
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Enrolled</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTableBody"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
